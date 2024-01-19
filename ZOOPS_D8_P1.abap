@@ -81,12 +81,51 @@ START-OF-SELECTION.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """" NOW CREATING FIRST OBJECT OF SUPER CLASS.
 
-WRITE :/ 'FIRST OBJECT OF SUPERCLASS  K1'.
-
-DATA K1 TYPE REF TO LCL_SUPER.
-
-CREATE OBJECT K1.                     """" NOTE - STATIC CONSTRUCTOR GETS EXECUTED FIRST THEN INSTANCE CONSTRUCTOR.
+*WRITE :/ 'FIRST OBJECT OF SUPERCLASS  K1'.
+*
+*DATA K1 TYPE REF TO LCL_SUPER.
+*
+*CREATE OBJECT K1.                     """" NOTE - STATIC CONSTRUCTOR GETS EXECUTED FIRST THEN INSTANCE CONSTRUCTOR.
 
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+*WRITE :/ 'SECOND OBJECT OF SUPERCLASS  K1'.
+*
+*DATA K2 TYPE REF TO LCL_SUPER.
+*
+*CREATE OBJECT K2.
+
+
+
+"""" NOW SINCE STATIC CONSTRUCTOR GOT EXECUTED ONCE FOR THE SUPER CLASS CHECKING AGAIN IF THE SUBCLASS STATIC CONSTRUCTOR WILL BE EXECUTED AGAIN.
+*WRITE :/ 'FIRST OBJECT OF SUBCLASS  OB1'.
+*
+*DATA OB1 TYPE REF TO LCL_SUB.
+*
+*CREATE OBJECT OB1.
+
+
+
+"""" SO ONLY INSTANCE OF SUPER GOT EXECUTED.
+
+
+"""" NOTE - CHECK IF THE SUPER CLASS CONTAINS CONSTRUCTOR.
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
